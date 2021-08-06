@@ -1,1 +1,2 @@
-<h1>DexHub</h1>
+# DexHub Script
+`loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/master/Init", true))()`
