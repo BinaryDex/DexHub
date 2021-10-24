@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/HonestlyDex/DexHub/main/Init"))()
+loadstring(game:HttpGet("https://dexhub.xyz/loader.lua"))()
