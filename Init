@@ -91,6 +91,8 @@ elseif game.PlaceId == 8158394866 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BinaryDex/DexHub/main/Noob_Crushers"))()
 elseif game.PlaceId == 3101667897 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BinaryDex/DexHub/main/Legends_Of_Speed"))()
+elseif game.PlaceId == 3527629287 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BinaryDex/DexHub/main/Big_Paintball"))()
 elseif game.PlaceId == 155615604 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BinaryDex/DexHub/main/Prison_Life"))()
 else
