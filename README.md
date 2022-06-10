@@ -11,7 +11,7 @@ DexHub
   
 ![GitHub issues](https://img.shields.io/github/issues/BinaryDex/DexHub?logo=github&style=flat-square) 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/BinaryDex/DexHub?label=Pull%20requests&logo=github&style=flat-square) 
-![GitHub](https://img.shields.io/github/license/BinaryDex/DexHub?label=Licence&logo=github&style=flat-square) 
+![GitHub](https://img.shields.io/github/license/BinaryDex/DexHubWeb?label=Licence&logo=github&style=flat-square) 
 ![GitHub forks](https://img.shields.io/github/forks/BinaryDex/DexHub?label=Forks&logo=github&style=flat-square) 
 ![GitHub Repo stars](https://img.shields.io/github/stars/BinaryDex/DexHub?color=yellow&label=Stars&logo=github&style=flat-square) 
 ![GitHub repo size](https://img.shields.io/github/repo-size/BinaryDex/DexHub?label=Repo%20size&logo=github&style=flat-square) 
