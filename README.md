@@ -33,7 +33,7 @@ loadstring(game:HttpGet("https://dexhub.xyz/loader.lua", true))()
 
 ## License
 
-© Dex, 2022. Unauthorized use and/or duplication of this material without permission from Dex is strictly prohibited.
+© Dex LLC, 2022. Unauthorized use and/or duplication of this material without permission from Dex is strictly prohibited.
 
 This code is licensed under the **Boost Software License 1.0**.
 
