@@ -380,21 +380,21 @@ function SolarisLib:New(Config)
 
         RefreshList(Sounds)
 
-        --game:GetService("RunService").RenderStepped:Connect(function()
-        --    local time = math.floor(Sound.TimePosition)
-        --    local timesecs = time % 60
-        --    local timemins = math.floor(time / 60)
-        --    if string.len(timesecs) < 2 then timesecs = "0" .. timesecs end
-        --    if string.len(timemins) < 2 then timemins = "0" .. timemins end
-        --    local timemax = math.floor(Sound.TimeLength)
-        --    local timemaxsecs = timemax % 60
-        --    local timemaxmins = math.floor(timemax / 60)
-        --    if string.len(timemaxsecs) < 2 then timemaxsecs = "0" .. timemaxsecs end
-        --    if string.len(timemaxmins) < 2 then timemaxmins = "0" .. timemaxmins end
-        --    MusicFrame.Frame.Timer1.Text = timemins .. ":" .. timesecs
-        --    MusicFrame.Frame.Timer2.Text = timemaxmins .. ":" .. timemaxsecs
-        --    MusicFrame.Frame.Progress.ProgressFrame.Size = UDim2.new(Sound.TimePosition / Sound.TimeLength,0,1,0)
-        --end)
+        game:GetService("RunService").RenderStepped:Connect(function()
+            local time = math.floor(Sound.TimePosition)
+            local timesecs = time % 60
+            local timemins = math.floor(time / 60)
+            if string.len(timesecs) < 2 then timesecs = "0" .. timesecs end
+            if string.len(timemins) < 2 then timemins = "0" .. timemins end
+            local timemax = math.floor(Sound.TimeLength)
+            local timemaxsecs = timemax % 60
+            local timemaxmins = math.floor(timemax / 60)
+            if string.len(timemaxsecs) < 2 then timemaxsecs = "0" .. timemaxsecs end
+            if string.len(timemaxmins) < 2 then timemaxmins = "0" .. timemaxmins end
+            MusicFrame.Frame.Timer1.Text = timemins .. ":" .. timesecs
+            MusicFrame.Frame.Timer2.Text = timemaxmins .. ":" .. timemaxsecs
+            MusicFrame.Frame.Progress.ProgressFrame.Size = UDim2.new(Sound.TimePosition / Sound.TimeLength,0,1,0)
+        end)
 
         
         spawn(function()
