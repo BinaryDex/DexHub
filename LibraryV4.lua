@@ -160,7 +160,7 @@ local SolarisLib = {
         }
     },
     Settings = {
-        Theme = "Default",
+        Theme = "Blue",
         ShowFriendsOnLaunch = true,
         ShowMusicOnLaunch = false,
         CloseBind = "RightShift"
