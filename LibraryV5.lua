@@ -919,7 +919,7 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Dex", Description = "DexHub Developer", Discord = "Dex#8822", V3rmillion = "v3rmillion.net/member.php?action=profile&uid=2306589"}
+	creditsTab:credit{Name = "Dex", Description = "DexHub Developer", Discord = "Dex#8822"}
 	--creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
 
 	return mt
@@ -2775,7 +2775,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
-			}):round(5):tooltip("Copy Disocrd")
+			}):round(5):tooltip("Copy Discord")
 			local discord = discordContainer:object("Frame", {
 				Size = UDim2.new(1, -6, 1, -6),
 				Centered = true,
