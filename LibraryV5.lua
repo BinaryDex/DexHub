@@ -118,7 +118,7 @@ end
 function Library:change_theme(toTheme)
 	Library.CurrentTheme = toTheme
 	local c = self:lighten(toTheme.Tertiary, 20)
-	Library.DisplayName.Text = "Welcome, <font color='rgb(" ..  math.floor(c.R*255) .. "," .. math.floor(c.G*255) .. "," .. math.floor(c.B*255) .. ")'> <b>" ..LocalPlayer.DisplayName .. "</b> </font>"
+	Library.DisplayName.Text = "Welcome, <font color='rgb("..math.floor(c.R*255)..","..math.floor(c.G*255)..","..math.floor(c.B*255)..")'> <b>"..LocalPlayer.DisplayName.."</b> </font>"
 	for color, objects in next, Library.ThemeObjects do
 		local themeColor = Library.CurrentTheme[color]
 		for _, obj in next, objects do
@@ -435,7 +435,7 @@ function Library:create(options)
 		Name = "DexHub",
 		Size = UDim2.fromOffset(600, 400),
 		Theme = self.Themes[settings.Theme],
-		Link = "DexHubV5"
+		Link = "DexHub"
 	}, options)
 
 	if getgenv and getgenv().MercuryUI then
@@ -885,7 +885,7 @@ function Library:create(options)
 	settingsTab:keybind{
 		Name = "Toggle Key",
 		Description = "Key to show/hide the UI.",
-		Keybind = Enum.KeyCode.Delete,
+		Keybind = Enum.KeyCode.RightAlt,
 		Callback = function()
 			self.Toggled = not self.Toggled
 			Library:show(self.Toggled)
@@ -919,8 +919,8 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Abstract", Description = "UI Library Developer", Discord = "Abstract#8007", V3rmillion = "AbstractPoo"}
-	creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
+	creditsTab:credit{Name = "Dex", Description = "DexHub Developer", Discord = "Dex#8822", V3rmillion = "v3rmillion.net/member.php?action=profile&uid=2306589"}
+	--creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
 
 	return mt
 end
@@ -2775,7 +2775,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
-			}):round(5):tooltip("copy discord")
+			}):round(5):tooltip("Copy Disocrd")
 			local discord = discordContainer:object("Frame", {
 				Size = UDim2.new(1, -6, 1, -6),
 				Centered = true,
@@ -2833,7 +2833,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -40, 1, -8),
 				Theme = {BackgroundColor3 = {"Main", 10}}
-			}):round(5):tooltip("copy v3rm")
+			}):round(5):tooltip("Copy V3rm")
 			local v3rmillion = v3rmillionContainer:object("ImageLabel", {
 				Image = "http://www.roblox.com/asset/?id=8594086769",
 				Size = UDim2.new(1, -4, 1, -4),
