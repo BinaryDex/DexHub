@@ -118,7 +118,7 @@ end
 function Library:change_theme(toTheme)
 	Library.CurrentTheme = toTheme
 	local c = self:lighten(toTheme.Tertiary, 20)
-	Library.DisplayName.Text = "Welcome,<font color='rgb("..math.floor(c.R*255)..","..math.floor(c.G*255)..","..math.floor(c.B*255)..")'><b>"..LocalPlayer.DisplayName.."</b></font>"
+	Library.DisplayName.Text = "Welcome,<b>"..LocalPlayer.DisplayName.."</b>"
 	for color, objects in next, Library.ThemeObjects do
 		local themeColor = Library.CurrentTheme[color]
 		for _, obj in next, objects do
@@ -919,7 +919,7 @@ function Library:create(options)
 
 	rawset(mt, "creditsContainer", creditsTab.container)
 
-	creditsTab:credit{Name = "Dex", Description = "DexHub Developer", Discord = "Dex#8822"}
+	creditsTab:credit{Name = "Dex", Description = "DexHub Developer", Discord = "Dex#8822", V3rmillion = "v3rmillion.net/member.php?action=profile&uid=2306589"}
 	--creditsTab:credit{Name = "Deity", Description = "UI Library Developer", Discord = "Deity#0228", V3rmillion = "0xDEITY"}
 
 	return mt
