@@ -1,25 +1,5 @@
---[[
-
-██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-█░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░░░░░░░█░░░░░░██░░░░░░█░░░░░░░░░░░░░░░░███░░░░░░░░██░░░░░░░░█
-█░░▄▀░░░░░░░░░░░░░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀▄▀░░██░░▄▀▄▀░░█
-█░░▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░▄▀░░███░░░░▄▀░░██░░▄▀░░░░█
-█░░▄▀░░░░░░▄▀░░░░░░▄▀░░█░░▄▀░░█████████░░▄▀░░████░░▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░████░░▄▀░░█████░░▄▀▄▀░░▄▀▄▀░░███
-█░░▄▀░░██░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░░░▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░░░▄▀░░█████░░░░▄▀▄▀▄▀░░░░███
-█░░▄▀░░██░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀▄▀░░███████░░░░▄▀░░░░█████
-█░░▄▀░░██░░░░░░██░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░yue<3▀░░░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░░░░░▄▀░░░░█████████░░▄▀░░███████
-█░░▄▀░░██████████░░▄▀░░█░░▄▀░░█████████░░▄▀░░██░░▄▀░░█████░░▄▀░░█████████░░▄▀░░██░░▄▀░░█░░▄▀░░██░░▄▀░░███████████░░▄▀░░███████
-█░░▄▀░░██████████░░▄▀░░█░░▄▀░░░░░░░░░░█░░▄▀░░██░░▄▀░░░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░█░░▄▀░░██░░▄▀░░░░░░███████░░▄▀░░███████
-█░░▄▀░░██████████░░▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀▄▀▄▀░░███████░░▄▀░░███████
-█░░░░░░██████████░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░░░░░███████░░░░░░███████
-██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
-
-edited: 1/26
-developers:
-v3rm AbstractPoo	discord Abstract#8007
-v3rm 0xDEITY		discord Deity#0228
-
-]]
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -2775,7 +2755,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -8, 1, -8),
 				BackgroundColor3 = Color3.fromRGB(88, 101, 242)
-			}):round(5):tooltip("Copy Disc")
+			}):round(5):tooltip("Discord")
 			local discord = discordContainer:object("Frame", {
 				Size = UDim2.new(1, -6, 1, -6),
 				Centered = true,
@@ -2823,7 +2803,7 @@ function Library:credit(options)
 			})
 
 			discordContainer.MouseButton1Click:connect(function()
-				setclipboard(options.Discord)
+				Notification:Notify({Title = "DexHub V5 ☕", Description = "Dex's Discord: Dex#8822\n\nWould you like to copy it?"},{OutlineColor = Color3.fromRGB(80, 80, 80), Time = 15, Type = "option"},{Image = "http://www.roblox.com/asset/?id=6023426923",ImageColor = Color3.fromRGB(255, 84, 84),Callback = function(State) if State then setclipboard("Dex#8822") end end})
 			end)
 		end
 
@@ -2833,7 +2813,7 @@ function Library:credit(options)
 				Size = UDim2.fromOffset(24, 24),
 				Position = UDim2.new(1, -40, 1, -8),
 				Theme = {BackgroundColor3 = {"Main", 10}}
-			}):round(5):tooltip("Copy V3rm")
+			}):round(5):tooltip("V3rm")
 			local v3rmillion = v3rmillionContainer:object("ImageLabel", {
 				Image = "http://www.roblox.com/asset/?id=8594086769",
 				Size = UDim2.new(1, -4, 1, -4),
@@ -2842,7 +2822,7 @@ function Library:credit(options)
 			})
 
 			v3rmillionContainer.MouseButton1Click:connect(function()
-				setclipboard(options.V3rmillion)
+				Notification:Notify({Title = "DexHub V5 ☕", Description = "Dex's V3rm: SaturnDex\n\nWould you like to copy it?"},{OutlineColor = Color3.fromRGB(80, 80, 80), Time = 15, Type = "option"},{Image = "http://www.roblox.com/asset/?id=6023426923",ImageColor = Color3.fromRGB(255, 84, 84),Callback = function(State) if State then setclipboard("SaturnDex") end end})
 			end)
 		end
 	end
